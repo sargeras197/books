@@ -66,7 +66,7 @@
         </div>
 
         <div class="book-grid">
-          <article class="book-card">
+          <article class="book-card" data-book="0">
             <img src="images/1.png" alt="Книга про протидію шахрайству" />
             <div class="book-content">
               <h3>Протидія шахрайству</h3>
@@ -76,7 +76,7 @@
             </div>
           </article>
 
-          <article class="book-card">
+          <article class="book-card" data-book="1">
             <img src="images/2.png" alt="Книга про сучасні системи захисту інформації" />
             <div class="book-content">
               <h3>Сучасні системи захисту інформації</h3>
@@ -86,7 +86,7 @@
             </div>
           </article>
 
-          <article class="book-card">
+          <article class="book-card" data-book="2">
             <img src="images/3.png" alt="Книга про створення настільного тенісу" />
             <div class="book-content">
               <h3>Створення програмного додатку «Настільний теніс»</h3>
@@ -96,7 +96,7 @@
             </div>
           </article>
 
-          <article class="book-card">
+          <article class="book-card" data-book="3">
             <img src="images/4.png" alt="Книга про вибір оптимального маршруту" />
             <div class="book-content">
               <h3>Прикладні програми для вибору оптимального маршруту</h3>
@@ -106,7 +106,7 @@
             </div>
           </article>
 
-          <article class="book-card">
+          <article class="book-card" data-book="4">
             <img src="images/5.png" alt="Книга про лабораторні стенди" />
             <div class="book-content">
               <h3>Лабораторні стенди для досліджень</h3>
@@ -116,7 +116,7 @@
             </div>
           </article>
 
-          <article class="book-card">
+          <article class="book-card" data-book="5">
             <img src="images/6.png" alt="Книга про системне програмування на Assembler" />
             <div class="book-content">
               <h3>Системне програмування на Assembler</h3>
@@ -126,7 +126,7 @@
             </div>
           </article>
 
-          <article class="book-card">
+          <article class="book-card" data-book="6">
             <img src="images/7.png" alt="Книга про кіберрозвідку та етичний хакінг" />
             <div class="book-content">
               <h3>Кіберрозвідка та етичний хакінг</h3>
@@ -136,7 +136,7 @@
             </div>
           </article>
 
-          <article class="book-card">
+          <article class="book-card" data-book="7">
             <img src="images/8.png" alt="Книга про мікроконтролери" />
             <div class="book-content">
               <h3>Мікроконтролери та моделювання</h3>
@@ -182,6 +182,23 @@
         </div>
       </section>
     </main>
+
+    <div class="modal-backdrop" id="bookModal" aria-hidden="true">
+      <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <button class="modal-close" id="closeModal" aria-label="Закрити">×</button>
+        <div class="modal-media">
+          <img id="modalImage" src="" alt="Обкладинка книги" />
+        </div>
+        <div class="modal-body">
+          <p class="eyebrow">Детальна інформація</p>
+          <h3 id="modalTitle"></h3>
+          <p id="modalShort" class="modal-short"></p>
+          <div id="modalDetails" class="detail-list"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
 
     <footer class="footer">
       <div class="container footer-inner">
