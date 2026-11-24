@@ -161,12 +161,33 @@ const books = [
       ['Тематика', 'Шахрайські схеми, цифрові загрози та людські долі'],
       ['Мова', 'Українська']
     ]
+  },
+  {
+    title: 'Предатель',
+    short: 'Художня історія про зрадника, у якій детективна інтрига переплітається зі злочинним світом.',
+    image: null,
+    details: [
+      ['Основна тема', 'Художня історія про зрадника'],
+      ['Жанр', 'Детектив, кримінал'],
+      ['Сторінки', '450']
+    ]
+  },
+  {
+    title: 'Байки Херсона',
+    short: 'Кумедні історії херсонців, сповнені місцевого гумору та життєвих пригод.',
+    image: null,
+    details: [
+      ['Основна тема', 'Кумедні історії херсонців'],
+      ['Жанр', 'Комедія'],
+      ['Сторінки', '160']
+    ]
   }
 ];
 
 const cards = document.querySelectorAll('.book-card');
 const modal = document.getElementById('bookModal');
 const closeBtn = document.getElementById('closeModal');
+const modalMedia = document.querySelector('.modal-media');
 const modalImage = document.getElementById('modalImage');
 const modalTitle = document.getElementById('modalTitle');
 const modalShort = document.getElementById('modalShort');
@@ -178,7 +199,10 @@ cards.forEach((card) => {
     const book = books[index];
     if (!book) return;
 
-    modalImage.src = book.image;
+    modalMedia.hidden = !book.image;
+    if (book.image) {
+      modalImage.src = book.image;
+    }
     modalImage.alt = book.title;
     modalTitle.textContent = book.title;
     modalShort.textContent = book.short;

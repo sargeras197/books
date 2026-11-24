@@ -210,6 +210,40 @@ h1 {
   box-shadow: inset 0 0 0 1px rgba(7, 17, 31, 0.05);
 }
 
+.book-cover-placeholder {
+  height: 320px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.16);
+}
+
+.book-cover-traitor {
+  background: radial-gradient(circle at 75% 25%, rgba(190, 24, 93, 0.5), transparent 35%), linear-gradient(145deg, #26121d, #080d18 72%);
+}
+
+.book-cover-kherson {
+  background: radial-gradient(circle at 25% 20%, rgba(250, 204, 21, 0.45), transparent 35%), linear-gradient(145deg, #135c57, #142c42 72%);
+}
+
+.book-cover-genre {
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.book-cover-title {
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  font-weight: 800;
+  line-height: 1.15;
+}
+
 .book-content {
   padding: 1.2rem 1.2rem 1.4rem;
 }
