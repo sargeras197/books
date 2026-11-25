@@ -226,10 +226,6 @@ h1 {
   background: radial-gradient(circle at 75% 25%, rgba(190, 24, 93, 0.5), transparent 35%), linear-gradient(145deg, #26121d, #080d18 72%);
 }
 
-.book-cover-kherson {
-  background: radial-gradient(circle at 25% 20%, rgba(250, 204, 21, 0.45), transparent 35%), linear-gradient(145deg, #135c57, #142c42 72%);
-}
-
 .book-cover-genre {
   font-size: 0.82rem;
   font-weight: 700;
